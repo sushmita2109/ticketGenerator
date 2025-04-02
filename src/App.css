@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+
   color: white;
 }
 .form-field {
@@ -79,7 +79,102 @@
   color: white;
   border: none;
   border-radius: 0.5rem;
-  width: 10vw;
+  width: 65%;
   height: 5vh;
   cursor: pointer;
+}
+
+.ticket-container {
+  position: relative;
+  display: inline-block;
+}
+
+.ticketdesign {
+  width: 100%;
+  height: auto;
+}
+
+.ticket-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  color: white; /* Adjust the color as needed */
+  text-align: center;
+}
+
+.ticket-text h2,
+.ticket-text p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.ticket-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ticket-subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ticket-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .mainbody {
+    background-image: url("./assets/background-mobile.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+  }
+  .ticket-form {
+    padding: 0.5rem;
+  }
+  .form-field {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-field input {
+    width: 50vw;
+  }
+  .uploadbox {
+    width: 50vw;
+    border-radius: 0.5rem;
+  }
+  .submit-button {
+    width: 60%;
+  }
 }
