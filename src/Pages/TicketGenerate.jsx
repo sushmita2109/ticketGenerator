@@ -22,17 +22,18 @@ const TicketGenerate = () => {
         <div className="ticket-text">
           <div className="ticket-header">
             <img src={logo} alt="logo" className="ticket-logo" />
-            <h2> Coding Conf 2025</h2>
+            <div className="ticket-header-text">
+              <h2> Coding Conf 2025</h2>
+              <p className="ticket-subheader">March 15, 2025 / Austin TX </p>
+            </div>
           </div>
-          <div className="ticket-subheader">
-            <p>March 15, 2025 / Austin TX </p>
-          </div>
+
           <div className="ticket-details">
             {avatarUrl && (
-              <img src={avatarUrl} alt="avatarpic" width="45" height="45" />
+              <img src={avatarUrl} alt="avatarpic" width="60" height="60" />
             )}
             <div className="ticket-info">
-              <p>{fname}</p>
+              <h2>{fname}</h2>
               <p>{guser}</p>
             </div>
           </div>
